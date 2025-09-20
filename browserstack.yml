@@ -1,13 +1,29 @@
+# browserstack.yml
 userName: lucykarimi_dIBEp3
 accessKey: xiuUN3VrMVZewXzRyrre
+buildName: Ecommerce Test Build
+projectName: StackDemo Platform
+browserstackLocal: false
+debug: true
+networkLogs: true
+consoleLogs: info
+
 platforms:
   - os: Windows
     osVersion: 11
-    browserName: Chrome
+    browserName: chrome  # lowercase
     browserVersion: latest
-  - browserName: Safari
-    osVersion: 18.6
-    deviceName: iPhone 16
-  - browserName: Chrome
-    osVersion: 12.0
-    deviceName: Samsung Galaxy S22 Ultra
+    sessionName: Windows 11 - Chrome
+  
+  - os: Windows
+    osVersion: 10
+    browserName: chrome  # lowercase
+    browserVersion: latest
+    sessionName: Windows 10 - Chrome
+
+  - os: OS X
+    osVersion: Ventura
+    browserName: safari  # lowercase
+    browserVersion: 16
+    sessionName: macOS - Safari
+
