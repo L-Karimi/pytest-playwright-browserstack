@@ -10194,3 +10194,54 @@
 2025-09-20T10:36:58.486Z CLI info  [lucykarimi_dIBEp3]   [f9430060-361c-48f3-ad19-f62b7b87b808]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
 2025-09-20T10:37:00.473Z CLI info [testhub:module]  [lucykarimi_dIBEp3]   [f9430060-361c-48f3-ad19-f62b7b87b808]  startBuild: response=jjgpymhuwpcvicqj7cktoeaveoqbxjbi7zmvovan
 2025-09-20T10:37:00.494Z CLI info  [lucykarimi_dIBEp3]  [jjgpymhuwpcvicqj7cktoeaveoqbxjbi7zmvovan]  [f9430060-361c-48f3-ad19-f62b7b87b808]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-09-20T10:37:13.212Z CLI info  [lucykarimi_dIBEp3]  [jjgpymhuwpcvicqj7cktoeaveoqbxjbi7zmvovan]  [f9430060-361c-48f3-ad19-f62b7b87b808]  [PRODUCTION] Making GET request to https://hub.browserstack.com
+2025-09-20T10:37:15.477Z CLI info  [lucykarimi_dIBEp3]  [jjgpymhuwpcvicqj7cktoeaveoqbxjbi7zmvovan]  [f9430060-361c-48f3-ad19-f62b7b87b808]  [PRODUCTION] Making GET request to https://hub-aps.browserstack.com
+2025-09-20T10:37:16.879Z CLI info  [lucykarimi_dIBEp3]  [jjgpymhuwpcvicqj7cktoeaveoqbxjbi7zmvovan]  [f9430060-361c-48f3-ad19-f62b7b87b808]  [PRODUCTION] Making GET request to https://hub-euw.browserstack.com
+2025-09-20T10:37:17.781Z CLI info  [lucykarimi_dIBEp3]  [jjgpymhuwpcvicqj7cktoeaveoqbxjbi7zmvovan]  [f9430060-361c-48f3-ad19-f62b7b87b808]  [PRODUCTION] Making GET request to https://hub-apse.browserstack.com
+2025-09-20T10:37:18.394Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [jjgpymhuwpcvicqj7cktoeaveoqbxjbi7zmvovan]  [f9430060-361c-48f3-ad19-f62b7b87b808]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: '9c81f17b-5585-4ea0-bf35-c670c818b1c4',
+    name: 'setup',
+    result: 'pending',
+    test_run_id: 'e063e007-0c44-48ee-85b2-dc3a8789e7c8',
+    body: { lang: 'python', code: null },
+    scope: 'test_add_product_to_cart[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T10:37:18.254Z'
+  },
+  logs: []
+} to 41701:0
+2025-09-20T10:37:18.502Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [jjgpymhuwpcvicqj7cktoeaveoqbxjbi7zmvovan]  [f9430060-361c-48f3-ad19-f62b7b87b808]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: '9c81f17b-5585-4ea0-bf35-c670c818b1c4',
+      name: 'setup',
+      result: 'pending',
+      test_run_id: 'e063e007-0c44-48ee-85b2-dc3a8789e7c8',
+      body: [Object],
+      scope: 'test_add_product_to_cart[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T10:37:18.254Z'
+    },
+    logs: []
+  }
+] to 41701:0
+2025-09-20T10:37:19.970Z CLI info  [lucykarimi_dIBEp3]  [jjgpymhuwpcvicqj7cktoeaveoqbxjbi7zmvovan]  [f9430060-361c-48f3-ad19-f62b7b87b808]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
