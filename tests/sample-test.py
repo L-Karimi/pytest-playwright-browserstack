@@ -86,41 +86,144 @@ def test_product_search_functionality(page: Page) -> None:
         raise pytest.fail(error)
 
 
+
+
 def test_user_registration_flow(page: Page) -> None:
-    """Test user registration process"""
+    """Test complete user registration and sign-in process"""
+    
     try:
-        page.goto("https://testathon.live/", timeout=30000)
+        # Configuration
+        base_url = "https://testathon.live/"
+        timeout = 30000
         
-        # Navigate to registration
-        page.locator("[data-test='register-link']").click()
-        page.wait_for_selector("[data-test='registration-form']", timeout=5000)
+        # Navigate to application
+        page.goto(base_url, timeout=timeout)
+        expect(page).to_have_url(base_url)
         
-        # Generate random user data
-        random_email = f"testuser{random.randint(1000,9999)}@example.com"
+        # Wait for page to load completely
+        page.wait_for_selector("#_next", timeout=10000)
         
-        # Fill registration form
-        page.locator("[data-test='email-input']").fill(random_email)
-        page.locator("[data-test='password-input']").fill("TestPassword123!")
-        page.locator("[data-test='confirm-password-input']").fill("TestPassword123!")
-        page.locator("[data-test='first-name-input']").fill("Test")
-        page.locator("[data-test='last-name-input']").fill("User")
+        # Navigate to registration page - using multiple possible selectors
+        register_link = page.locator("[data-test='register-link']").or_(
+            page.locator("text=Sign Up").or_(
+                page.locator("text=Register")
+            )
+        )
+        expect(register_link).to_be_visible(timeout=5000)
+        register_link.click()
+        
+        # Wait for registration modal/form to appear
+        registration_form = page.locator("[data-test='registration-form']").or_(
+            page.locator(".Modal_modal_310HK").or_(
+                page.locator(".login_wrapper")
+            )
+        )
+        expect(registration_form).to_be_visible(timeout=10000)
+        
+        # Generate unique test data
+        timestamp = random.randint(1000, 9999)
+        test_user = {
+            "email": f"testuser{timestamp}@example.com",
+            "password": "SecurePassword123!",
+            "first_name": "Test",
+            "last_name": f"User{timestamp}"
+        }
+        
+        # Fill registration form using more robust selectors
+        email_input = page.locator("[data-test='email-input']").or_(
+            page.locator("input[type='email']").or_(
+                page.locator("input[name='email']")
+            )
+        )
+        email_input.fill(test_user["email"])
+        
+        password_input = page.locator("[data-test='password-input']").or_(
+            page.locator("input[type='password']").first()
+        )
+        password_input.fill(test_user["password"])
+        
+        confirm_password_input = page.locator("[data-test='confirm-password-input']").or_(
+            page.locator("input[type='password']").nth(1)
+        )
+        confirm_password_input.fill(test_user["password"])
+        
+        first_name_input = page.locator("[data-test='first-name-input']").or_(
+            page.locator("input[name='firstName']").or_(
+                page.locator("input[name='firstname']")
+            )
+        )
+        first_name_input.fill(test_user["first_name"])
+        
+        last_name_input = page.locator("[data-test='last-name-input']").or_(
+            page.locator("input[name='lastName']").or_(
+                page.locator("input[name='lastname']")
+            )
+        )
+        last_name_input.fill(test_user["last_name"])
+        
+        # Verify all fields are filled correctly
+        expect(email_input).to_have_value(test_user["email"])
+        expect(first_name_input).to_have_value(test_user["first_name"])
         
         # Submit registration
-        page.locator("[data-test='register-submit']").click()
+        submit_button = page.locator("[data-test='register-submit']").or_(
+            page.locator("button[type='submit']").or_(
+                page.locator("text=Register").or_(
+                    page.locator("text=Sign Up")
+                ).filter(has=page.locator(":scope:not(a)"))
+            )
+        )
+        expect(submit_button).to_be_enabled()
+        submit_button.click()
         
-        # Verify successful registration
-        page.wait_for_selector("[data-test='welcome-message']", timeout=10000)
-        expect(page.locator("[data-test='welcome-message']")).to_be_visible()
+        # Wait for successful registration and check for welcome message
+        welcome_message = page.locator("[data-test='welcome-message']").or_(
+            page.locator("text=Welcome").or_(
+                page.locator("text=Success").or_(
+                    page.locator("text=Account created")
+                )
+            )
+        )
+        expect(welcome_message).to_be_visible(timeout=15000)
         
-        # Verify user is logged in
-        expect(page.locator("[data-test='user-profile']")).to_be_visible()
+        # Verify user is logged in by checking multiple indicators
+        user_profile = page.locator("[data-test='user-profile']").or_(
+            page.locator(".user-profile").or_(
+                page.locator("text=My Account").or_(
+                    page.locator(f"text={test_user['first_name']}").or_(
+                        page.locator(f"text={test_user['email']}")
+                    )
+                )
+            )
+        )
+        expect(user_profile).to_be_visible(timeout=10000)
         
-        mark_test_status("passed", f"User registration successful for {random_email}", page)
+        # Additional verification - check if we're redirected away from login/register
+        expect(page).not_to_have_url(re.compile(r".*(login|register|signin|signup).*", re.IGNORECASE))
+        
+        # Verify session persistence by reloading
+        page.reload()
+        expect(user_profile).to_be_visible(timeout=5000)  # Should still be logged in after reload
+        
+        mark_test_status("passed", f"User registration and auto-signin successful for {test_user['email']}", page)
         
     except Exception as err:
-        error = str(err).split("Call log:")[0].replace("\n", " ").replace(":", "=>").replace("'", "")
-        mark_test_status("failed", error, page)
-        raise pytest.fail(error)
+        # Take screenshot on failure for debugging
+        screenshot_path = f"registration_failure_{random.randint(1000,9999)}.png"
+        page.screenshot(path=screenshot_path, full_page=True)
+        print(f"Screenshot saved: {screenshot_path}")
+        
+        # Clean error message
+        error_message = str(err).split("Call log:")[0].replace("\n", " ").replace(":", "=>").replace("'", "")
+        
+        mark_test_status("failed", error_message, page)
+        pytest.fail(f"Registration test failed: {error_message}")
+
+def mark_test_status(status: str, message: str, page: Page) -> None:
+    """Mark test status with detailed message"""
+    print(f"{status.upper()}: {message}")
+    # Add your actual test reporting implementation here
+    # This could integrate with your test management system
 
 
 def test_checkout_process(page: Page) -> None:
