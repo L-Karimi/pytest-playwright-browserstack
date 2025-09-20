@@ -1,0 +1,2352 @@
+2025-09-20T08:33:39.994Z CLI info     Config : {"userName":"lucykarimi_dIBEp3","accessKey":"xiuUN3VrMVZewXzRyrre","platforms":[{"os":"Windows","osVersion":"11","browserName":"Chrome","browserVersion":"latest"},{"browserName":"Safari","osVersion":"18.6","deviceName":"iPhone 16"},{"browserName":"Chrome","osVersion":"12","deviceName":"Samsung Galaxy S22 Ultra"}]}
+2025-09-20T08:33:40.024Z CLI info [testhub:module]  [lucykarimi_dIBEp3]   [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Starting testhub from 9600:0
+2025-09-20T08:33:40.026Z CLI info [testhub:module]  [lucykarimi_dIBEp3]   [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  startBuild: payload=
+
+{"started_at":"2025-09-20T08:33:40.025Z","host_info":{"hostname":"lucy-HP","platform":"linux","type":"Linux","version":"#29~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Aug 14 16:52:50 UTC 2","arch":"x64"},"ci_info":{"build_number":null},"version_control":{"name":"git","sha":"d042b66bd3e602ca41dd4e9f4f439d015a574185","short_sha":"d042b66bd3","branch":"main","tag":null,"committer":"GitHub <noreply@github.com>","committer_date":"1720021228","author":"Yash D. Saraf <yashdsaraf@users.noreply.github.com>","author_date":"1720021228","commit_message":"Merge pull request #6 from browserstack/merge_sdk_to_main","root":"/home/lucy/Documents/pytest-playwright-browserstack","common_git_dir":"/home/lucy/Documents/pytest-playwright-browserstack/.git","worktree_git_dir":"/home/lucy/Documents/pytest-playwright-browserstack/.git","last_tag":null,"commits_since_last_tag":null,"remotes":[{"name":"origin","url":"https://github.com/browserstack/pytest-playwright-browserstack.git"}]},"project_name":"","build_run_identifier":null,"description":"","tags":[],"failed_tests_rerun":false,"accessibility":{"settings":{}},"framework_details":{"frameworkName":"pytest","frameworkVersion":"7.4.4","sdkVersion":"1.31.4","cliVersion":"1.6.21","language":"python","testFramework":{"name":"selenium","version":"4.35.0"}},"product_map":{"observability":true,"accessibility":null,"percy":false,"automate":true,"app_automate":false},"browserstackAutomation":true,"test_orchestration":{}}
+2025-09-20T08:33:40.027Z CLI info  [lucykarimi_dIBEp3]   [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2025-09-20T08:33:41.131Z CLI info [testhub:module]  [lucykarimi_dIBEp3]   [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  startBuild: response=ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky
+2025-09-20T08:33:41.134Z CLI info  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-09-20T08:33:45.359Z CLI info  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  [PRODUCTION] Making GET request to https://hub.browserstack.com
+2025-09-20T08:33:46.939Z CLI info  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  [PRODUCTION] Making GET request to https://hub-aps.browserstack.com
+2025-09-20T08:33:48.370Z CLI info  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  [PRODUCTION] Making GET request to https://hub-euw.browserstack.com
+2025-09-20T08:33:48.781Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: '68d414f9-cb2b-4eec-8538-3ad5c99826e1',
+    name: 'setup',
+    result: 'pending',
+    test_run_id: '30512819-b694-48b7-beb8-3fec7fe77172',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:33:48.742Z'
+  },
+  logs: []
+} to 9600:0
+2025-09-20T08:33:49.137Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: '68d414f9-cb2b-4eec-8538-3ad5c99826e1',
+      name: 'setup',
+      result: 'pending',
+      test_run_id: '30512819-b694-48b7-beb8-3fec7fe77172',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:33:48.742Z'
+    },
+    logs: []
+  }
+] to 9600:0
+2025-09-20T08:33:49.187Z CLI info  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  [PRODUCTION] Making GET request to https://hub-apse.browserstack.com
+2025-09-20T08:33:49.400Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: 'b0a12e57-3ffa-4941-9ef1-308d143e5336',
+    name: 'setup',
+    result: 'pending',
+    test_run_id: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:33:49.379Z'
+  },
+  logs: []
+} to 9600:0
+2025-09-20T08:33:49.831Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.012Z',
+      uuid: '30512819-b694-48b7-beb8-3fec7fe77172',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:49Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '30512819-b694-48b7-beb8-3fec7fe77172'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:49.850Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.012Z',
+      uuid: '30512819-b694-48b7-beb8-3fec7fe77172',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:49Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '30512819-b694-48b7-beb8-3fec7fe77172'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:49.859Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.012Z',
+      uuid: '30512819-b694-48b7-beb8-3fec7fe77172',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:49Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '30512819-b694-48b7-beb8-3fec7fe77172'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:49.870Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.012Z',
+      uuid: '30512819-b694-48b7-beb8-3fec7fe77172',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:49Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '30512819-b694-48b7-beb8-3fec7fe77172'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:49.877Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.012Z',
+      uuid: '30512819-b694-48b7-beb8-3fec7fe77172',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:49Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '30512819-b694-48b7-beb8-3fec7fe77172'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:49.885Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.012Z',
+      uuid: '30512819-b694-48b7-beb8-3fec7fe77172',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:49Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '30512819-b694-48b7-beb8-3fec7fe77172'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:49.893Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.012Z',
+      uuid: '30512819-b694-48b7-beb8-3fec7fe77172',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:49Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '30512819-b694-48b7-beb8-3fec7fe77172'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:49.898Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.012Z',
+      uuid: '30512819-b694-48b7-beb8-3fec7fe77172',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:49Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '30512819-b694-48b7-beb8-3fec7fe77172'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:49.904Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.012Z',
+      uuid: '30512819-b694-48b7-beb8-3fec7fe77172',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:49Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '30512819-b694-48b7-beb8-3fec7fe77172'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:50.327Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.143Z',
+      uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:50Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:50.524Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: '1af54fea-c74a-4cc5-a49e-9b5de412f8b2',
+    name: 'setup',
+    result: 'pending',
+    test_run_id: '660be92b-a41b-426a-a930-2f6ce0f74358',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:33:50.517Z'
+  },
+  logs: []
+} to 9600:0
+2025-09-20T08:33:50.846Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.143Z',
+      uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:50Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:50.858Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.143Z',
+      uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:50Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:50.880Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.143Z',
+      uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:50Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:50.892Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.143Z',
+      uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:50Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:50.911Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.143Z',
+      uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:50Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:50.932Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.143Z',
+      uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:50Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:50.953Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.143Z',
+      uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:50Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:50.987Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.143Z',
+      uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:50Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:51.149Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: 'b0a12e57-3ffa-4941-9ef1-308d143e5336',
+      name: 'setup',
+      result: 'pending',
+      test_run_id: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:33:49.379Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: '1af54fea-c74a-4cc5-a49e-9b5de412f8b2',
+      name: 'setup',
+      result: 'pending',
+      test_run_id: '660be92b-a41b-426a-a930-2f6ce0f74358',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:33:50.517Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 9600:0
+2025-09-20T08:33:51.374Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.221Z',
+      uuid: '660be92b-a41b-426a-a930-2f6ce0f74358',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:51Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '660be92b-a41b-426a-a930-2f6ce0f74358'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:51.387Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.221Z',
+      uuid: '660be92b-a41b-426a-a930-2f6ce0f74358',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:51Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '660be92b-a41b-426a-a930-2f6ce0f74358'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:51.394Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.221Z',
+      uuid: '660be92b-a41b-426a-a930-2f6ce0f74358',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:51Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '660be92b-a41b-426a-a930-2f6ce0f74358'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:51.405Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.221Z',
+      uuid: '660be92b-a41b-426a-a930-2f6ce0f74358',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:51Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '660be92b-a41b-426a-a930-2f6ce0f74358'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:51.419Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.221Z',
+      uuid: '660be92b-a41b-426a-a930-2f6ce0f74358',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:51Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '660be92b-a41b-426a-a930-2f6ce0f74358'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:51.431Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.221Z',
+      uuid: '660be92b-a41b-426a-a930-2f6ce0f74358',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:51Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '660be92b-a41b-426a-a930-2f6ce0f74358'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:51.446Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.221Z',
+      uuid: '660be92b-a41b-426a-a930-2f6ce0f74358',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:51Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '660be92b-a41b-426a-a930-2f6ce0f74358'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:51.455Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.221Z',
+      uuid: '660be92b-a41b-426a-a930-2f6ce0f74358',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:51Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '660be92b-a41b-426a-a930-2f6ce0f74358'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:51.470Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.221Z',
+      uuid: '660be92b-a41b-426a-a930-2f6ce0f74358',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:51Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '660be92b-a41b-426a-a930-2f6ce0f74358'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:51.613Z CLI info  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-20T08:33:52.597Z CLI info  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-20T08:33:53.147Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Processing batch event [
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 9600:0
+2025-09-20T08:33:53.173Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: '68d414f9-cb2b-4eec-8538-3ad5c99826e1',
+    name: 'setup',
+    result: 'failed',
+    test_run_id: '30512819-b694-48b7-beb8-3fec7fe77172',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:33:48.742Z',
+    finished_at: '2025-09-20T08:33:53.166Z'
+  },
+  logs: []
+} to 9600:0
+2025-09-20T08:33:53.183Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.012Z',
+      uuid: '30512819-b694-48b7-beb8-3fec7fe77172',
+      kind: 'TEST_LOG',
+      message: '\x1B[31mE\x1B[0m',
+      level: 'INFO',
+      test_run_uuid: '30512819-b694-48b7-beb8-3fec7fe77172'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:53.198Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '30512819-b694-48b7-beb8-3fec7fe77172',
+    integrations: { browserstack: [Object] }
+  }
+} to 9600:0
+2025-09-20T08:33:53.208Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.012Z',
+      uuid: '30512819-b694-48b7-beb8-3fec7fe77172',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:53Z [bstack1ll1ll1l111_opy_][WARNING] - dropping due to lack of results False',
+      level: 'INFO',
+      test_run_uuid: '30512819-b694-48b7-beb8-3fec7fe77172'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:53.230Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_EACH',
+    framework: 'pytest',
+    uuid: 'd62d3e47-bed4-4678-92ca-c5df2b72fc7b',
+    name: 'teardown',
+    result: 'pending',
+    test_run_id: '30512819-b694-48b7-beb8-3fec7fe77172',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:33:53.215Z'
+  },
+  logs: []
+} to 9600:0
+2025-09-20T08:33:53.261Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_EACH',
+    framework: 'pytest',
+    uuid: 'd62d3e47-bed4-4678-92ca-c5df2b72fc7b',
+    name: 'teardown',
+    result: 'passed',
+    test_run_id: '30512819-b694-48b7-beb8-3fec7fe77172',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:33:53.215Z',
+    finished_at: '2025-09-20T08:33:53.246Z'
+  },
+  logs: []
+} to 9600:0
+2025-09-20T08:33:53.475Z CLI info  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-20T08:33:53.845Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: 'b0a12e57-3ffa-4941-9ef1-308d143e5336',
+    name: 'setup',
+    result: 'failed',
+    test_run_id: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:33:49.379Z',
+    finished_at: '2025-09-20T08:33:53.837Z'
+  },
+  logs: []
+} to 9600:0
+2025-09-20T08:33:53.855Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.143Z',
+      uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+      kind: 'TEST_LOG',
+      message: '\x1B[31mE\x1B[0m',
+      level: 'INFO',
+      test_run_uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:53.861Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+    integrations: { browserstack: [Object] }
+  }
+} to 9600:0
+2025-09-20T08:33:53.869Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.143Z',
+      uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:53Z [bstack1ll1ll1l111_opy_][WARNING] - dropping due to lack of results False',
+      level: 'INFO',
+      test_run_uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:53.896Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_EACH',
+    framework: 'pytest',
+    uuid: '7f13540f-3e6c-4380-986e-2d287068184e',
+    name: 'teardown',
+    result: 'pending',
+    test_run_id: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:33:53.879Z'
+  },
+  logs: []
+} to 9600:0
+2025-09-20T08:33:53.927Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_EACH',
+    framework: 'pytest',
+    uuid: '7f13540f-3e6c-4380-986e-2d287068184e',
+    name: 'teardown',
+    result: 'passed',
+    test_run_id: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:33:53.879Z',
+    finished_at: '2025-09-20T08:33:53.910Z'
+  },
+  logs: []
+} to 9600:0
+2025-09-20T08:33:54.424Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: '1af54fea-c74a-4cc5-a49e-9b5de412f8b2',
+    name: 'setup',
+    result: 'failed',
+    test_run_id: '660be92b-a41b-426a-a930-2f6ce0f74358',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:33:50.517Z',
+    finished_at: '2025-09-20T08:33:54.416Z'
+  },
+  logs: []
+} to 9600:0
+2025-09-20T08:33:54.434Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.221Z',
+      uuid: '660be92b-a41b-426a-a930-2f6ce0f74358',
+      kind: 'TEST_LOG',
+      message: '\x1B[31mE\x1B[0m',
+      level: 'INFO',
+      test_run_uuid: '660be92b-a41b-426a-a930-2f6ce0f74358'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:54.441Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '660be92b-a41b-426a-a930-2f6ce0f74358',
+    integrations: { browserstack: [Object] }
+  }
+} to 9600:0
+2025-09-20T08:33:54.456Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:33:45.221Z',
+      uuid: '660be92b-a41b-426a-a930-2f6ce0f74358',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:33:54Z [bstack1ll1ll1l111_opy_][WARNING] - dropping due to lack of results False',
+      level: 'INFO',
+      test_run_uuid: '660be92b-a41b-426a-a930-2f6ce0f74358'
+    }
+  ]
+} to 9600:0
+2025-09-20T08:33:54.482Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_EACH',
+    framework: 'pytest',
+    uuid: '8df9b463-6039-480e-9c8e-419dcde0d0e2',
+    name: 'teardown',
+    result: 'pending',
+    test_run_id: '660be92b-a41b-426a-a930-2f6ce0f74358',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:33:54.467Z'
+  },
+  logs: []
+} to 9600:0
+2025-09-20T08:33:54.526Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_EACH',
+    framework: 'pytest',
+    uuid: '8df9b463-6039-480e-9c8e-419dcde0d0e2',
+    name: 'teardown',
+    result: 'passed',
+    test_run_id: '660be92b-a41b-426a-a930-2f6ce0f74358',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:33:54.467Z',
+    finished_at: '2025-09-20T08:33:54.509Z'
+  },
+  logs: []
+} to 9600:0
+2025-09-20T08:33:54.816Z CLI info  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-20T08:33:55.151Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Processing batch event [
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: '68d414f9-cb2b-4eec-8538-3ad5c99826e1',
+      name: 'setup',
+      result: 'failed',
+      test_run_id: '30512819-b694-48b7-beb8-3fec7fe77172',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:33:48.742Z',
+      finished_at: '2025-09-20T08:33:53.166Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '30512819-b694-48b7-beb8-3fec7fe77172',
+      integrations: [Object]
+    }
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_EACH',
+      framework: 'pytest',
+      uuid: 'd62d3e47-bed4-4678-92ca-c5df2b72fc7b',
+      name: 'teardown',
+      result: 'pending',
+      test_run_id: '30512819-b694-48b7-beb8-3fec7fe77172',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:33:53.215Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_EACH',
+      framework: 'pytest',
+      uuid: 'd62d3e47-bed4-4678-92ca-c5df2b72fc7b',
+      name: 'teardown',
+      result: 'passed',
+      test_run_id: '30512819-b694-48b7-beb8-3fec7fe77172',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:33:53.215Z',
+      finished_at: '2025-09-20T08:33:53.246Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: 'b0a12e57-3ffa-4941-9ef1-308d143e5336',
+      name: 'setup',
+      result: 'failed',
+      test_run_id: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:33:49.379Z',
+      finished_at: '2025-09-20T08:33:53.837Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+      integrations: [Object]
+    }
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_EACH',
+      framework: 'pytest',
+      uuid: '7f13540f-3e6c-4380-986e-2d287068184e',
+      name: 'teardown',
+      result: 'pending',
+      test_run_id: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:33:53.879Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_EACH',
+      framework: 'pytest',
+      uuid: '7f13540f-3e6c-4380-986e-2d287068184e',
+      name: 'teardown',
+      result: 'passed',
+      test_run_id: '54ba3f6b-1d0d-4cfd-8280-2d2c26cd7b35',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:33:53.879Z',
+      finished_at: '2025-09-20T08:33:53.910Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: '1af54fea-c74a-4cc5-a49e-9b5de412f8b2',
+      name: 'setup',
+      result: 'failed',
+      test_run_id: '660be92b-a41b-426a-a930-2f6ce0f74358',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:33:50.517Z',
+      finished_at: '2025-09-20T08:33:54.416Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '660be92b-a41b-426a-a930-2f6ce0f74358',
+      integrations: [Object]
+    }
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_EACH',
+      framework: 'pytest',
+      uuid: '8df9b463-6039-480e-9c8e-419dcde0d0e2',
+      name: 'teardown',
+      result: 'pending',
+      test_run_id: '660be92b-a41b-426a-a930-2f6ce0f74358',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:33:54.467Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_EACH',
+      framework: 'pytest',
+      uuid: '8df9b463-6039-480e-9c8e-419dcde0d0e2',
+      name: 'teardown',
+      result: 'passed',
+      test_run_id: '660be92b-a41b-426a-a930-2f6ce0f74358',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:33:54.467Z',
+      finished_at: '2025-09-20T08:33:54.509Z'
+    },
+    logs: []
+  }
+] to 9600:0
+2025-09-20T08:33:55.842Z CLI info  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-20T08:33:55.843Z CLI error [testhub:module]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  [collectBuildData] Exception in collecting build data for build UUID ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky: {"message":"Build data collection started"}
+2025-09-20T08:33:56.849Z CLI info  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  [PRODUCTION] Making PUT request to https://collector-observability.browserstack.com
+2025-09-20T08:33:57.611Z CLI info [testhub:module]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  stopBuild: ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky request={"finished_at":"2025-09-20T08:33:54.816Z","finished_metadata":[],"custom_metadata":null} response={"data":""}
+2025-09-20T08:33:57.616Z CLI info  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-09-20T08:33:57.628Z CLI info [TEST REPORTING AND ANALYTICS:module]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Visit https://automation.browserstack.com/builds/ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky to view build report, insights, and many more debugging information all at one place!
+2025-09-20T08:33:58.215Z CLI info  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2025-09-20T08:33:58.749Z CLI info  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  [PRODUCTION] Making POST request to https://eds.browserstack.com
+2025-09-20T08:33:59.705Z CLI info [main]  [lucykarimi_dIBEp3]  [ve7bxp9xwsgtcwg6hpctoepbmaepndcqkiyr2cky]  [33bf1e07-b4eb-4d66-bab3-fedcb7422ecb]  Received graceful signal termination, performing cleanup
+2025-09-20T08:35:25.060Z CLI info     Config : {"userName":"lucykarimi_dIBEp3","accessKey":"xiuUN3VrMVZewXzRyrre","platforms":[{"os":"Windows","osVersion":"11","browserName":"Chrome","browserVersion":"latest"},{"browserName":"Safari","osVersion":"18.6","deviceName":"iPhone 16"},{"browserName":"Chrome","osVersion":"12","deviceName":"Samsung Galaxy S22 Ultra"}]}
+2025-09-20T08:35:25.081Z CLI info [testhub:module]  [lucykarimi_dIBEp3]   [e43833f9-6a92-4559-97fb-c12b67c9da96]  Starting testhub from 10081:0
+2025-09-20T08:35:25.082Z CLI info [testhub:module]  [lucykarimi_dIBEp3]   [e43833f9-6a92-4559-97fb-c12b67c9da96]  startBuild: payload=
+
+{"started_at":"2025-09-20T08:35:25.081Z","host_info":{"hostname":"lucy-HP","platform":"linux","type":"Linux","version":"#29~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Aug 14 16:52:50 UTC 2","arch":"x64"},"ci_info":{"build_number":null},"version_control":{"name":"git","sha":"d042b66bd3e602ca41dd4e9f4f439d015a574185","short_sha":"d042b66bd3","branch":"main","tag":null,"committer":"GitHub <noreply@github.com>","committer_date":"1720021228","author":"Yash D. Saraf <yashdsaraf@users.noreply.github.com>","author_date":"1720021228","commit_message":"Merge pull request #6 from browserstack/merge_sdk_to_main","root":"/home/lucy/Documents/pytest-playwright-browserstack","common_git_dir":"/home/lucy/Documents/pytest-playwright-browserstack/.git","worktree_git_dir":"/home/lucy/Documents/pytest-playwright-browserstack/.git","last_tag":null,"commits_since_last_tag":null,"remotes":[{"name":"origin","url":"https://github.com/browserstack/pytest-playwright-browserstack.git"}]},"project_name":"","build_run_identifier":null,"description":"","tags":[],"failed_tests_rerun":false,"accessibility":{"settings":{}},"framework_details":{"frameworkName":"pytest","frameworkVersion":"7.4.4","sdkVersion":"1.31.4","cliVersion":"1.6.21","language":"python","testFramework":{"name":"selenium","version":"4.35.0"}},"product_map":{"observability":true,"accessibility":null,"percy":false,"automate":true,"app_automate":false},"browserstackAutomation":true,"test_orchestration":{}}
+2025-09-20T08:35:25.082Z CLI info  [lucykarimi_dIBEp3]   [e43833f9-6a92-4559-97fb-c12b67c9da96]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2025-09-20T08:35:26.095Z CLI info [testhub:module]  [lucykarimi_dIBEp3]   [e43833f9-6a92-4559-97fb-c12b67c9da96]  startBuild: response=dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl
+2025-09-20T08:35:26.098Z CLI info  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-09-20T08:35:28.680Z CLI info  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  [PRODUCTION] Making GET request to https://hub.browserstack.com
+2025-09-20T08:35:30.054Z CLI info  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  [PRODUCTION] Making GET request to https://hub-aps.browserstack.com
+2025-09-20T08:35:31.691Z CLI info  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  [PRODUCTION] Making GET request to https://hub-euw.browserstack.com
+2025-09-20T08:35:32.028Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: 'cd5dd3c8-960d-418e-869b-ef188b30fa24',
+    name: 'setup',
+    result: 'pending',
+    test_run_id: '7ee612e7-7821-4de6-972d-bef566babaaf',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:35:32.002Z'
+  },
+  logs: []
+} to 10081:0
+2025-09-20T08:35:32.098Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: 'cd5dd3c8-960d-418e-869b-ef188b30fa24',
+      name: 'setup',
+      result: 'pending',
+      test_run_id: '7ee612e7-7821-4de6-972d-bef566babaaf',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:35:32.002Z'
+    },
+    logs: []
+  }
+] to 10081:0
+2025-09-20T08:35:32.611Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: '55af7b40-ce1e-4615-a8e5-30b70bde9007',
+    name: 'setup',
+    result: 'pending',
+    test_run_id: '83cba932-5df1-42fc-a2ca-c2265d727667',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:35:32.587Z'
+  },
+  logs: []
+} to 10081:0
+2025-09-20T08:35:32.662Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: '7ee612e7-7821-4de6-972d-bef566babaaf',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:32Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '7ee612e7-7821-4de6-972d-bef566babaaf'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:32.668Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: '7ee612e7-7821-4de6-972d-bef566babaaf',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:32Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '7ee612e7-7821-4de6-972d-bef566babaaf'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:32.673Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: '7ee612e7-7821-4de6-972d-bef566babaaf',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:32Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '7ee612e7-7821-4de6-972d-bef566babaaf'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:32.680Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: '7ee612e7-7821-4de6-972d-bef566babaaf',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:32Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '7ee612e7-7821-4de6-972d-bef566babaaf'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:32.687Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: '7ee612e7-7821-4de6-972d-bef566babaaf',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:32Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '7ee612e7-7821-4de6-972d-bef566babaaf'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:32.692Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: '7ee612e7-7821-4de6-972d-bef566babaaf',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:32Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '7ee612e7-7821-4de6-972d-bef566babaaf'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:32.701Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: '7ee612e7-7821-4de6-972d-bef566babaaf',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:32Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '7ee612e7-7821-4de6-972d-bef566babaaf'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:32.711Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: '7ee612e7-7821-4de6-972d-bef566babaaf',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:32Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '7ee612e7-7821-4de6-972d-bef566babaaf'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:32.718Z CLI info  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  [PRODUCTION] Making GET request to https://hub-apse.browserstack.com
+2025-09-20T08:35:32.729Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: '7ee612e7-7821-4de6-972d-bef566babaaf',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:32Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '7ee612e7-7821-4de6-972d-bef566babaaf'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:33.210Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: '85ae527a-2898-4065-99e1-423a35d5b7c2',
+    name: 'setup',
+    result: 'pending',
+    test_run_id: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:35:33.190Z'
+  },
+  logs: []
+} to 10081:0
+2025-09-20T08:35:33.422Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.467Z',
+      uuid: '83cba932-5df1-42fc-a2ca-c2265d727667',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:33Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '83cba932-5df1-42fc-a2ca-c2265d727667'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:33.439Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.467Z',
+      uuid: '83cba932-5df1-42fc-a2ca-c2265d727667',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:33Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '83cba932-5df1-42fc-a2ca-c2265d727667'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:33.459Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.467Z',
+      uuid: '83cba932-5df1-42fc-a2ca-c2265d727667',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:33Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '83cba932-5df1-42fc-a2ca-c2265d727667'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:33.478Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.467Z',
+      uuid: '83cba932-5df1-42fc-a2ca-c2265d727667',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:33Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '83cba932-5df1-42fc-a2ca-c2265d727667'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:33.481Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.467Z',
+      uuid: '83cba932-5df1-42fc-a2ca-c2265d727667',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:33Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '83cba932-5df1-42fc-a2ca-c2265d727667'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:33.488Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.467Z',
+      uuid: '83cba932-5df1-42fc-a2ca-c2265d727667',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:33Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '83cba932-5df1-42fc-a2ca-c2265d727667'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:33.494Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.467Z',
+      uuid: '83cba932-5df1-42fc-a2ca-c2265d727667',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:33Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '83cba932-5df1-42fc-a2ca-c2265d727667'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:33.505Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.467Z',
+      uuid: '83cba932-5df1-42fc-a2ca-c2265d727667',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:33Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '83cba932-5df1-42fc-a2ca-c2265d727667'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:33.520Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.467Z',
+      uuid: '83cba932-5df1-42fc-a2ca-c2265d727667',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:33Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: '83cba932-5df1-42fc-a2ca-c2265d727667'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:33.951Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:33Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:33.960Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:33Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:33.976Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:33Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:33.985Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:33Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:33.993Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:33Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:33.998Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:33Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:34.005Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:34Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:34.014Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:34Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:34.022Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:34Z [browserstack_sdk.sdk_cli.bstack1lllllll1ll_opy_][WARNING] - wrapped method untracked: {method_name} framework_state={framework_state} ctx={ctx} instances=dict_keys([])',
+      level: 'INFO',
+      test_run_uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:34.098Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: '55af7b40-ce1e-4615-a8e5-30b70bde9007',
+      name: 'setup',
+      result: 'pending',
+      test_run_id: '83cba932-5df1-42fc-a2ca-c2265d727667',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:35:32.587Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: '85ae527a-2898-4065-99e1-423a35d5b7c2',
+      name: 'setup',
+      result: 'pending',
+      test_run_id: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:35:33.190Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 10081:0
+2025-09-20T08:35:34.683Z CLI info  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-20T08:35:35.483Z CLI info  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-20T08:35:35.820Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: 'cd5dd3c8-960d-418e-869b-ef188b30fa24',
+    name: 'setup',
+    result: 'failed',
+    test_run_id: '7ee612e7-7821-4de6-972d-bef566babaaf',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:35:32.002Z',
+    finished_at: '2025-09-20T08:35:35.813Z'
+  },
+  logs: []
+} to 10081:0
+2025-09-20T08:35:35.829Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: '7ee612e7-7821-4de6-972d-bef566babaaf',
+      kind: 'TEST_LOG',
+      message: '\x1B[31mE\x1B[0m',
+      level: 'INFO',
+      test_run_uuid: '7ee612e7-7821-4de6-972d-bef566babaaf'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:35.838Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '7ee612e7-7821-4de6-972d-bef566babaaf',
+    integrations: { browserstack: [Object] }
+  }
+} to 10081:0
+2025-09-20T08:35:35.846Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: '7ee612e7-7821-4de6-972d-bef566babaaf',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:35Z [bstack1ll1ll1l111_opy_][WARNING] - dropping due to lack of results False',
+      level: 'INFO',
+      test_run_uuid: '7ee612e7-7821-4de6-972d-bef566babaaf'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:35.867Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_EACH',
+    framework: 'pytest',
+    uuid: 'b59768c2-6929-4141-bf19-c937a19a98c7',
+    name: 'teardown',
+    result: 'pending',
+    test_run_id: '7ee612e7-7821-4de6-972d-bef566babaaf',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:35:35.852Z'
+  },
+  logs: []
+} to 10081:0
+2025-09-20T08:35:35.909Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_EACH',
+    framework: 'pytest',
+    uuid: 'b59768c2-6929-4141-bf19-c937a19a98c7',
+    name: 'teardown',
+    result: 'passed',
+    test_run_id: '7ee612e7-7821-4de6-972d-bef566babaaf',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:35:35.852Z',
+    finished_at: '2025-09-20T08:35:35.885Z'
+  },
+  logs: []
+} to 10081:0
+2025-09-20T08:35:36.097Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Processing batch event [
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: 'cd5dd3c8-960d-418e-869b-ef188b30fa24',
+      name: 'setup',
+      result: 'failed',
+      test_run_id: '7ee612e7-7821-4de6-972d-bef566babaaf',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:35:32.002Z',
+      finished_at: '2025-09-20T08:35:35.813Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '7ee612e7-7821-4de6-972d-bef566babaaf',
+      integrations: [Object]
+    }
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_EACH',
+      framework: 'pytest',
+      uuid: 'b59768c2-6929-4141-bf19-c937a19a98c7',
+      name: 'teardown',
+      result: 'pending',
+      test_run_id: '7ee612e7-7821-4de6-972d-bef566babaaf',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:35:35.852Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_EACH',
+      framework: 'pytest',
+      uuid: 'b59768c2-6929-4141-bf19-c937a19a98c7',
+      name: 'teardown',
+      result: 'passed',
+      test_run_id: '7ee612e7-7821-4de6-972d-bef566babaaf',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:35:35.852Z',
+      finished_at: '2025-09-20T08:35:35.885Z'
+    },
+    logs: []
+  }
+] to 10081:0
+2025-09-20T08:35:36.526Z CLI info  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-20T08:35:36.623Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: '55af7b40-ce1e-4615-a8e5-30b70bde9007',
+    name: 'setup',
+    result: 'failed',
+    test_run_id: '83cba932-5df1-42fc-a2ca-c2265d727667',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:35:32.587Z',
+    finished_at: '2025-09-20T08:35:36.616Z'
+  },
+  logs: []
+} to 10081:0
+2025-09-20T08:35:36.633Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.467Z',
+      uuid: '83cba932-5df1-42fc-a2ca-c2265d727667',
+      kind: 'TEST_LOG',
+      message: '\x1B[31mE\x1B[0m',
+      level: 'INFO',
+      test_run_uuid: '83cba932-5df1-42fc-a2ca-c2265d727667'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:36.639Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '83cba932-5df1-42fc-a2ca-c2265d727667',
+    integrations: { browserstack: [Object] }
+  }
+} to 10081:0
+2025-09-20T08:35:36.647Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.467Z',
+      uuid: '83cba932-5df1-42fc-a2ca-c2265d727667',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:36Z [bstack1ll1ll1l111_opy_][WARNING] - dropping due to lack of results False',
+      level: 'INFO',
+      test_run_uuid: '83cba932-5df1-42fc-a2ca-c2265d727667'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:36.666Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_EACH',
+    framework: 'pytest',
+    uuid: '30ae7548-a91f-4bd2-80ff-83b5f7d01986',
+    name: 'teardown',
+    result: 'pending',
+    test_run_id: '83cba932-5df1-42fc-a2ca-c2265d727667',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:35:36.653Z'
+  },
+  logs: []
+} to 10081:0
+2025-09-20T08:35:36.702Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_EACH',
+    framework: 'pytest',
+    uuid: '30ae7548-a91f-4bd2-80ff-83b5f7d01986',
+    name: 'teardown',
+    result: 'passed',
+    test_run_id: '83cba932-5df1-42fc-a2ca-c2265d727667',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:35:36.653Z',
+    finished_at: '2025-09-20T08:35:36.687Z'
+  },
+  logs: []
+} to 10081:0
+2025-09-20T08:35:36.817Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_EACH',
+    framework: 'pytest',
+    uuid: '85ae527a-2898-4065-99e1-423a35d5b7c2',
+    name: 'setup',
+    result: 'failed',
+    test_run_id: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:35:33.190Z',
+    finished_at: '2025-09-20T08:35:36.805Z'
+  },
+  logs: []
+} to 10081:0
+2025-09-20T08:35:36.846Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+      kind: 'TEST_LOG',
+      message: '\x1B[31mE\x1B[0m',
+      level: 'INFO',
+      test_run_uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:36.859Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+    integrations: { browserstack: [Object] }
+  }
+} to 10081:0
+2025-09-20T08:35:36.870Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'pytest',
+      testFrameworkVersion: '7.4.4',
+      testFrameworkState: 'INIT_TEST',
+      timestamp: '2025-09-20T08:35:28.666Z',
+      uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+      kind: 'TEST_LOG',
+      message: '2025-09-20T08:35:36Z [bstack1ll1ll1l111_opy_][WARNING] - dropping due to lack of results False',
+      level: 'INFO',
+      test_run_uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80'
+    }
+  ]
+} to 10081:0
+2025-09-20T08:35:36.890Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_EACH',
+    framework: 'pytest',
+    uuid: 'f09b0d00-0886-4528-a3d6-3cc6ebeb69a9',
+    name: 'teardown',
+    result: 'pending',
+    test_run_id: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:35:36.880Z'
+  },
+  logs: []
+} to 10081:0
+2025-09-20T08:35:36.919Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_EACH',
+    framework: 'pytest',
+    uuid: 'f09b0d00-0886-4528-a3d6-3cc6ebeb69a9',
+    name: 'teardown',
+    result: 'passed',
+    test_run_id: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+    body: { lang: 'python', code: null },
+    scope: 'test_bstack_sample[chromium]',
+    custom_metadata: {},
+    tags: [],
+    scopes: [],
+    file_name: 'tests/sample-test.py',
+    location: 'tests/sample-test.py',
+    vc_filepath: 'tests/sample-test.py',
+    started_at: '2025-09-20T08:35:36.880Z',
+    finished_at: '2025-09-20T08:35:36.908Z'
+  },
+  logs: []
+} to 10081:0
+2025-09-20T08:35:37.321Z CLI info  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-20T08:35:38.038Z CLI error [testhub:module]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  [collectBuildData] Exception in collecting build data for build UUID dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl: {"message":"Build data collection started"}
+2025-09-20T08:35:38.101Z CLI info [testhub:request-queue-handler]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Processing batch event [
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: '55af7b40-ce1e-4615-a8e5-30b70bde9007',
+      name: 'setup',
+      result: 'failed',
+      test_run_id: '83cba932-5df1-42fc-a2ca-c2265d727667',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:35:32.587Z',
+      finished_at: '2025-09-20T08:35:36.616Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '83cba932-5df1-42fc-a2ca-c2265d727667',
+      integrations: [Object]
+    }
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_EACH',
+      framework: 'pytest',
+      uuid: '30ae7548-a91f-4bd2-80ff-83b5f7d01986',
+      name: 'teardown',
+      result: 'pending',
+      test_run_id: '83cba932-5df1-42fc-a2ca-c2265d727667',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:35:36.653Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_EACH',
+      framework: 'pytest',
+      uuid: '30ae7548-a91f-4bd2-80ff-83b5f7d01986',
+      name: 'teardown',
+      result: 'passed',
+      test_run_id: '83cba932-5df1-42fc-a2ca-c2265d727667',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:35:36.653Z',
+      finished_at: '2025-09-20T08:35:36.687Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_EACH',
+      framework: 'pytest',
+      uuid: '85ae527a-2898-4065-99e1-423a35d5b7c2',
+      name: 'setup',
+      result: 'failed',
+      test_run_id: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:35:33.190Z',
+      finished_at: '2025-09-20T08:35:36.805Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+      integrations: [Object]
+    }
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] },
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_EACH',
+      framework: 'pytest',
+      uuid: 'f09b0d00-0886-4528-a3d6-3cc6ebeb69a9',
+      name: 'teardown',
+      result: 'pending',
+      test_run_id: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:35:36.880Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_EACH',
+      framework: 'pytest',
+      uuid: 'f09b0d00-0886-4528-a3d6-3cc6ebeb69a9',
+      name: 'teardown',
+      result: 'passed',
+      test_run_id: 'daa66d8e-856d-4f57-b9c3-eeddb6221f80',
+      body: [Object],
+      scope: 'test_bstack_sample[chromium]',
+      custom_metadata: {},
+      tags: [],
+      scopes: [],
+      file_name: 'tests/sample-test.py',
+      location: 'tests/sample-test.py',
+      vc_filepath: 'tests/sample-test.py',
+      started_at: '2025-09-20T08:35:36.880Z',
+      finished_at: '2025-09-20T08:35:36.908Z'
+    },
+    logs: []
+  }
+] to 10081:0
+2025-09-20T08:35:38.106Z CLI info  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-09-20T08:35:38.943Z CLI info  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  [PRODUCTION] Making PUT request to https://collector-observability.browserstack.com
+2025-09-20T08:35:39.723Z CLI info [testhub:module]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  stopBuild: dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl request={"finished_at":"2025-09-20T08:35:37.215Z","finished_metadata":[],"custom_metadata":null} response={"data":""}
+2025-09-20T08:35:39.726Z CLI info  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-09-20T08:35:39.734Z CLI info [TEST REPORTING AND ANALYTICS:module]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Visit https://automation.browserstack.com/builds/dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl to view build report, insights, and many more debugging information all at one place!
+2025-09-20T08:35:40.075Z CLI info  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2025-09-20T08:35:41.013Z CLI info  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  [PRODUCTION] Making POST request to https://eds.browserstack.com
+2025-09-20T08:35:42.038Z CLI info [main]  [lucykarimi_dIBEp3]  [dxtje5yld6zjupwrvoxydsquyka84ojnmdslnxdl]  [e43833f9-6a92-4559-97fb-c12b67c9da96]  Received graceful signal termination, performing cleanup
